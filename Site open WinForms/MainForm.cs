@@ -21,5 +21,10 @@ namespace Site_open_WinForms
         {
             System.Diagnostics.Process.Start("https://directum.akelon.com/Login.aspx?ReturnUrl=%2f");
         }
+
+        private void webInfo_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://club.directum.ru/webhelp/directumrx/web/index.html?provodnik_sistemy.htm");
+        }
     }
 }
