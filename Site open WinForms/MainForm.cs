@@ -22,14 +22,19 @@ namespace Site_open_WinForms
             System.Diagnostics.Process.Start("https://directum.akelon.com/Login.aspx?ReturnUrl=%2f");
         }
 
-        private void webInfo_Click(object sender, EventArgs e)
+        private void WebInfo_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://club.directum.ru/webhelp/directumrx/web/index.html?provodnik_sistemy.htm");
         }
 
-        private void dvelopInfo_Click(object sender, EventArgs e)
+        private void DvelopInfo_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://club.directum.ru/webhelp/directumrx/sds/index.html?sds_sreda_razrabotki_sds.htm");
+        }
+
+        private void knowledge_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://kmknowledge.akelon.com/");
         }
     }
 }

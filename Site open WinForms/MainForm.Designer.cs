@@ -31,6 +31,7 @@
             this.KS_Open = new System.Windows.Forms.Button();
             this.webInfo = new System.Windows.Forms.Button();
             this.dvelopInfo = new System.Windows.Forms.Button();
+            this.knowledge = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // KS_Open
@@ -51,7 +52,7 @@
             this.webInfo.TabIndex = 1;
             this.webInfo.Text = "Справка Веб-Клиент";
             this.webInfo.UseVisualStyleBackColor = true;
-            this.webInfo.Click += new System.EventHandler(this.webInfo_Click);
+            this.webInfo.Click += new System.EventHandler(this.WebInfo_Click);
             // 
             // dvelopInfo
             // 
@@ -61,13 +62,24 @@
             this.dvelopInfo.TabIndex = 2;
             this.dvelopInfo.Text = "Справка разработчик";
             this.dvelopInfo.UseVisualStyleBackColor = true;
-            this.dvelopInfo.Click += new System.EventHandler(this.dvelopInfo_Click);
+            this.dvelopInfo.Click += new System.EventHandler(this.DvelopInfo_Click);
+            // 
+            // knowledge
+            // 
+            this.knowledge.Location = new System.Drawing.Point(48, 196);
+            this.knowledge.Name = "knowledge";
+            this.knowledge.Size = new System.Drawing.Size(130, 23);
+            this.knowledge.TabIndex = 3;
+            this.knowledge.Text = "База знаний";
+            this.knowledge.UseVisualStyleBackColor = true;
+            this.knowledge.Click += new System.EventHandler(this.knowledge_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.knowledge);
             this.Controls.Add(this.dvelopInfo);
             this.Controls.Add(this.webInfo);
             this.Controls.Add(this.KS_Open);
@@ -82,6 +94,7 @@
         private System.Windows.Forms.Button KS_Open;
         private System.Windows.Forms.Button webInfo;
         private System.Windows.Forms.Button dvelopInfo;
+        private System.Windows.Forms.Button knowledge;
     }
 }
 
