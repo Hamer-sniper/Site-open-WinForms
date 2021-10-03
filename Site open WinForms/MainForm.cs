@@ -36,5 +36,10 @@ namespace Site_open_WinForms
         {
             System.Diagnostics.Process.Start("http://kmknowledge.akelon.com/");
         }
+
+        private void service_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://service.akelon.com/app");
+        }
     }
 }
