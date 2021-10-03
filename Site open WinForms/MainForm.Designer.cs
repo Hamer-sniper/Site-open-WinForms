@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.KS_Open = new System.Windows.Forms.Button();
             this.webInfo = new System.Windows.Forms.Button();
             this.dvelopInfo = new System.Windows.Forms.Button();
@@ -89,12 +90,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(277, 450);
+            this.ClientSize = new System.Drawing.Size(277, 321);
             this.Controls.Add(this.service);
             this.Controls.Add(this.knowledge);
             this.Controls.Add(this.dvelopInfo);
             this.Controls.Add(this.webInfo);
             this.Controls.Add(this.KS_Open);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "Открытие рабочих сайтов";
             this.ResumeLayout(false);
