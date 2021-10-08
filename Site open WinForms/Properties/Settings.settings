@@ -1,7 +1,21 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Site_open_WinForms.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="KS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://directum.akelon.com/Login.aspx?ReturnUrl=%2f</Value>
+    </Setting>
+    <Setting Name="WebInfoSite" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://club.directum.ru/webhelp/directumrx/web/index.html?provodnik_sistemy.htm</Value>
+    </Setting>
+    <Setting Name="DevelopInfoSite" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://club.directum.ru/webhelp/directumrx/sds/index.html?sds_sreda_razrabotki_sds.htm</Value>
+    </Setting>
+    <Setting Name="KnowledgeSite" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://kmknowledge.akelon.com/</Value>
+    </Setting>
+    <Setting Name="ServiceSite" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://service.akelon.com/app</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

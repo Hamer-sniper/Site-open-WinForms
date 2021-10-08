@@ -36,14 +36,17 @@
             this.service = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabMain = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPropeties = new System.Windows.Forms.TabPage();
+            this.labelWeb = new System.Windows.Forms.Label();
+            this.labelDevelop = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabMain.SuspendLayout();
+            this.tabPropeties.SuspendLayout();
             this.SuspendLayout();
             // 
             // KS_Open
             // 
-            this.KS_Open.Location = new System.Drawing.Point(281, 91);
+            this.KS_Open.Location = new System.Drawing.Point(300, 105);
             this.KS_Open.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.KS_Open.Name = "KS_Open";
             this.KS_Open.Size = new System.Drawing.Size(412, 65);
@@ -54,7 +57,7 @@
             // 
             // webInfo
             // 
-            this.webInfo.Location = new System.Drawing.Point(281, 220);
+            this.webInfo.Location = new System.Drawing.Point(300, 235);
             this.webInfo.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.webInfo.Name = "webInfo";
             this.webInfo.Size = new System.Drawing.Size(412, 65);
@@ -65,7 +68,7 @@
             // 
             // dvelopInfo
             // 
-            this.dvelopInfo.Location = new System.Drawing.Point(281, 341);
+            this.dvelopInfo.Location = new System.Drawing.Point(300, 365);
             this.dvelopInfo.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.dvelopInfo.Name = "dvelopInfo";
             this.dvelopInfo.Size = new System.Drawing.Size(412, 65);
@@ -76,7 +79,7 @@
             // 
             // knowledge
             // 
-            this.knowledge.Location = new System.Drawing.Point(281, 474);
+            this.knowledge.Location = new System.Drawing.Point(300, 495);
             this.knowledge.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.knowledge.Name = "knowledge";
             this.knowledge.Size = new System.Drawing.Size(412, 65);
@@ -87,7 +90,7 @@
             // 
             // service
             // 
-            this.service.Location = new System.Drawing.Point(281, 595);
+            this.service.Location = new System.Drawing.Point(300, 625);
             this.service.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.service.Name = "service";
             this.service.Size = new System.Drawing.Size(412, 65);
@@ -98,12 +101,13 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabMain);
+            this.tabControl1.Controls.Add(this.tabPropeties);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1078, 890);
+            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl1.TabIndex = 5;
             // 
             // tabMain
@@ -121,15 +125,35 @@
             this.tabMain.Text = "Основное";
             this.tabMain.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tabPropeties
             // 
-            this.tabPage2.Location = new System.Drawing.Point(12, 58);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1054, 820);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPropeties.Controls.Add(this.labelDevelop);
+            this.tabPropeties.Controls.Add(this.labelWeb);
+            this.tabPropeties.Location = new System.Drawing.Point(12, 58);
+            this.tabPropeties.Name = "tabPropeties";
+            this.tabPropeties.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPropeties.Size = new System.Drawing.Size(1054, 820);
+            this.tabPropeties.TabIndex = 1;
+            this.tabPropeties.Text = "Параметры";
+            this.tabPropeties.UseVisualStyleBackColor = true;
+            // 
+            // labelWeb
+            // 
+            this.labelWeb.AutoSize = true;
+            this.labelWeb.Location = new System.Drawing.Point(6, 235);
+            this.labelWeb.Name = "labelWeb";
+            this.labelWeb.Size = new System.Drawing.Size(311, 37);
+            this.labelWeb.TabIndex = 0;
+            this.labelWeb.Text = "Справка Веб-Клиент";
+            // 
+            // labelDevelop
+            // 
+            this.labelDevelop.AutoSize = true;
+            this.labelDevelop.Location = new System.Drawing.Point(6, 365);
+            this.labelDevelop.Name = "labelDevelop";
+            this.labelDevelop.Size = new System.Drawing.Size(330, 37);
+            this.labelDevelop.TabIndex = 1;
+            this.labelDevelop.Text = "Справка разработчик";
             // 
             // MainForm
             // 
@@ -139,13 +163,14 @@
             this.ClientSize = new System.Drawing.Size(1102, 914);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Открытие рабочих сайтов";
             this.tabControl1.ResumeLayout(false);
             this.tabMain.ResumeLayout(false);
+            this.tabPropeties.ResumeLayout(false);
+            this.tabPropeties.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -158,8 +183,10 @@
         private System.Windows.Forms.Button knowledge;
         private System.Windows.Forms.Button service;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPropeties;
         private System.Windows.Forms.TabPage tabMain;
+        private System.Windows.Forms.Label labelDevelop;
+        private System.Windows.Forms.Label labelWeb;
     }
 }
 

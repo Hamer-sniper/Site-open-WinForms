@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Site_open_WinForms.Properties.Settings;
 
 namespace Site_open_WinForms
 {
@@ -15,11 +16,15 @@ namespace Site_open_WinForms
         public MainForm()
         {
             InitializeComponent();
+            
+            // todo Properties.Settings.Default.ServiceSite;
+            // todo Properties.Settings.Default.WebInfoSite;
+                       
         }
 
         private void KS_Open_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://directum.akelon.com/Login.aspx?ReturnUrl=%2f");
+            System.Diagnostics.Process.Start(Default.KS);
         }
 
         private void WebInfo_Click(object sender, EventArgs e)
@@ -34,12 +39,12 @@ namespace Site_open_WinForms
 
         private void knowledge_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://kmknowledge.akelon.com/");
+            System.Diagnostics.Process.Start(Default.KnowledgeSite);
         }
 
         private void service_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://service.akelon.com/app");
+            System.Diagnostics.Process.Start(Default.ServiceSite);
         }
     }
 }
