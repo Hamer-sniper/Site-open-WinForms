@@ -37,8 +37,10 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabMain = new System.Windows.Forms.TabPage();
             this.tabPropeties = new System.Windows.Forms.TabPage();
-            this.labelWeb = new System.Windows.Forms.Label();
+            this.textBoxDevelop = new System.Windows.Forms.TextBox();
+            this.textBoxWeb = new System.Windows.Forms.TextBox();
             this.labelDevelop = new System.Windows.Forms.Label();
+            this.labelWeb = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabMain.SuspendLayout();
             this.tabPropeties.SuspendLayout();
@@ -127,6 +129,8 @@
             // 
             // tabPropeties
             // 
+            this.tabPropeties.Controls.Add(this.textBoxDevelop);
+            this.tabPropeties.Controls.Add(this.textBoxWeb);
             this.tabPropeties.Controls.Add(this.labelDevelop);
             this.tabPropeties.Controls.Add(this.labelWeb);
             this.tabPropeties.Location = new System.Drawing.Point(12, 58);
@@ -137,14 +141,21 @@
             this.tabPropeties.Text = "Параметры";
             this.tabPropeties.UseVisualStyleBackColor = true;
             // 
-            // labelWeb
+            // textBoxDevelop
             // 
-            this.labelWeb.AutoSize = true;
-            this.labelWeb.Location = new System.Drawing.Point(6, 235);
-            this.labelWeb.Name = "labelWeb";
-            this.labelWeb.Size = new System.Drawing.Size(311, 37);
-            this.labelWeb.TabIndex = 0;
-            this.labelWeb.Text = "Справка Веб-Клиент";
+            this.textBoxDevelop.Location = new System.Drawing.Point(377, 362);
+            this.textBoxDevelop.Name = "textBoxDevelop";
+            this.textBoxDevelop.Size = new System.Drawing.Size(671, 44);
+            this.textBoxDevelop.TabIndex = 3;
+            this.textBoxDevelop.TextChanged += new System.EventHandler(this.textBoxDevelop_TextChanged);
+            // 
+            // textBoxWeb
+            // 
+            this.textBoxWeb.Location = new System.Drawing.Point(377, 227);
+            this.textBoxWeb.Name = "textBoxWeb";
+            this.textBoxWeb.Size = new System.Drawing.Size(671, 44);
+            this.textBoxWeb.TabIndex = 2;
+            this.textBoxWeb.TextChanged += new System.EventHandler(this.textBoxWeb_TextChanged);
             // 
             // labelDevelop
             // 
@@ -154,6 +165,15 @@
             this.labelDevelop.Size = new System.Drawing.Size(330, 37);
             this.labelDevelop.TabIndex = 1;
             this.labelDevelop.Text = "Справка разработчик";
+            // 
+            // labelWeb
+            // 
+            this.labelWeb.AutoSize = true;
+            this.labelWeb.Location = new System.Drawing.Point(6, 235);
+            this.labelWeb.Name = "labelWeb";
+            this.labelWeb.Size = new System.Drawing.Size(311, 37);
+            this.labelWeb.TabIndex = 0;
+            this.labelWeb.Text = "Справка Веб-Клиент";
             // 
             // MainForm
             // 
@@ -187,6 +207,8 @@
         private System.Windows.Forms.TabPage tabMain;
         private System.Windows.Forms.Label labelDevelop;
         private System.Windows.Forms.Label labelWeb;
+        private System.Windows.Forms.TextBox textBoxWeb;
+        private System.Windows.Forms.TextBox textBoxDevelop;
     }
 }
 

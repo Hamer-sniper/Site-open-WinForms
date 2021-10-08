@@ -16,10 +16,9 @@ namespace Site_open_WinForms
         public MainForm()
         {
             InitializeComponent();
-            
-            // todo Properties.Settings.Default.ServiceSite;
-            // todo Properties.Settings.Default.WebInfoSite;
-                       
+
+            textBoxWeb.Text = Default.WebInfoSite;
+            textBoxDevelop.Text = Default.DevelopInfoSite;                                   
         }
 
         private void KS_Open_Click(object sender, EventArgs e)
@@ -28,13 +27,13 @@ namespace Site_open_WinForms
         }
 
         private void WebInfo_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://club.directum.ru/webhelp/directumrx/web/index.html?provodnik_sistemy.htm");
+        {           
+            System.Diagnostics.Process.Start(textBoxWeb.Text);           
         }
 
         private void DvelopInfo_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://club.directum.ru/webhelp/directumrx/sds/index.html?sds_sreda_razrabotki_sds.htm");
+        {            
+            System.Diagnostics.Process.Start(textBoxDevelop.Text);          
         }
 
         private void knowledge_Click(object sender, EventArgs e)
@@ -45,6 +44,20 @@ namespace Site_open_WinForms
         private void service_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(Default.ServiceSite);
+        }
+
+        private void textBoxWeb_TextChanged(object sender, EventArgs e)
+        {
+            Default.WebInfoSite = textBoxWeb.Text;
+            if (!string.IsNullOrEmpty(textBoxWeb.Text))
+                Default.Save();
+        }
+
+        private void textBoxDevelop_TextChanged(object sender, EventArgs e)
+        {
+            Default.DevelopInfoSite = textBoxDevelop.Text;
+            if (!string.IsNullOrEmpty(textBoxDevelop.Text))
+                Default.Save();
         }
     }
 }
